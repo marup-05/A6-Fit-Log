@@ -1,64 +1,27 @@
 import Image from "next/image";
-import logo from "../../../public/assets/logo.png"
+import logo from "../../../public/assets/logo.png";
 import Link from "next/link";
+
+import NavbarLinks from "./NavbarLinks";
+import NavbarStatus from "./NavbarStatus";
 
 const Navbar = () => {
   return (
-    <nav className="w-full sticky top-0 z-50 bg-black">
+    <nav className="sticky top-0 z-50 w-full bg-black">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-
-          
+        <div className="flex h-20 items-center justify-between">
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Image
-              src={logo}
-              alt="FitLog Logo"
-              width={28}
-              height={28}
-            />
+            <Image src={logo} alt="FitLog Logo" width={28} height={28} />
 
-            <span className="text-white text-xl font-bold">
-              FITLOG
-            </span>
+            <span className="text-xl font-bold text-white">FITLOG</span>
           </Link>
 
-          
-          <div className="flex items-center gap-8">
+          {/* Main Navigation */}
+          <NavbarLinks />
 
-            <Link
-              href="/"
-              className="text-white text-sm font-medium hover:text-[#C2F800] transition-colors duration-200"
-            >
-              Workouts
-            </Link>
-
-            <Link
-              href="/my-plan"
-              className="text-white text-sm font-medium hover:text-[#C2F800] transition-colors duration-200"
-            >
-              My Plan
-            </Link>
-
-          </div>
-
-          <div className="flex items-center gap-5">
-
-            <Link
-              href="/my-plan?tab=plan"
-              className="text-white text-sm font-medium hover:text-[#C2F800] transition-colors duration-200"
-            >
-              Plan
-            </Link>
-
-            <Link
-              href="/my-plan?tab=saved"
-              className="text-white text-sm font-medium hover:text-[#C2F800] transition-colors duration-200"
-            >
-              Saved
-            </Link>
-
-          </div>
-
+          {/* Plan & Saved */}
+          <NavbarStatus />
         </div>
       </div>
     </nav>
