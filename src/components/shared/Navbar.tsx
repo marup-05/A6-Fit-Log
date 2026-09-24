@@ -41,7 +41,6 @@ const Navbar = () => {
 
           </div>
 
-          {/* Plan & Saved */}
           <div className="flex items-center gap-5">
 
             <Link
