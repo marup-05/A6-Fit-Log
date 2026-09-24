@@ -10,7 +10,7 @@ interface WorkoutCardProps {
 const WorkoutCard = ({ exercise }: WorkoutCardProps) => {
   return (
     <Link
-      href={`/workouts/${exercise.id}`}
+      href={`/workouts/${exercise.id}`} 
       className="group block overflow-hidden rounded-xl border border-white/5 bg-[#15171C] transition-all duration-300 hover:-translate-y-1 hover:border-[#C2F800]/30"
     >
       {/* Image */}
@@ -64,7 +64,7 @@ const WorkoutCard = ({ exercise }: WorkoutCardProps) => {
           {/* Calories */}
           <div className="flex items-center gap-1.5">
             <FaFire size={9} />
-            <span>{exercise.caloriesBurned} kcal</span>
+            <span>{exercise.caloriesBurned} kcal</span>  
           </div>
 
           {/* Rating */}
