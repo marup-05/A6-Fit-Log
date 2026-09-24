@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="flex min-h-[265px] items-center justify-between px-8 py-10 sm:px-10 lg:px-12">
         <div className="z-10 max-w-[590px]">
           {/* Eyebrow */}
-          <span className="mb-3 block text-[10px] font-extrabold tracking-[0.8px] text-[#baff00]">
+          <span className="mb-3 block text-[10px] font-extrabold tracking-[0.8px] text-[#baff00]"> 
             WORKOUT LIBRARY
           </span>
 
