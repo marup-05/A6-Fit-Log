@@ -13,7 +13,9 @@ const SaveButton = ({ exercise }: SaveButtonProps) => {
   const { saved, saveWorkout } = useFitLog();
 
   const handleSave = () => {
-    const alreadySaved = saved.some((item) => item.id === exercise.id);
+    const alreadySaved = saved.some(
+      (item) => item.id === exercise.id
+    );
 
     if (alreadySaved) {
       toast.info("Already saved");
@@ -29,7 +31,7 @@ const SaveButton = ({ exercise }: SaveButtonProps) => {
     <button
       type="button"
       onClick={handleSave}
-      className="rounded-md border border-white/15 px-4 py-3 text-xs font-medium text-white transition hover:border-[#C2F800] hover:text-[#C2F800]"
+      className="w-full rounded-md border border-white/15 px-4 py-3 text-[10px] font-medium text-white transition hover:border-[#C2F800] hover:text-[#C2F800] sm:w-auto sm:text-xs"
     >
       Save for later
     </button>

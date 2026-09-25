@@ -5,15 +5,26 @@ import logo from "../../../public/assets/logo.png";
 const Footer = () => {
   return (
     <footer className="border-t border-white/5 bg-black">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col items-center justify-between gap-5 sm:flex-row">
-          <Link href="/" className="flex items-center gap-2">
-            <Image src={logo} alt="FitLog Logo" width={22} height={22} />
+      <div className="container mx-auto px-3 py-7 sm:px-4 sm:py-8">
+        <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
+          <Link
+            href="/"
+            className="flex items-center gap-2"
+          >
+            <Image
+              src={logo}
+              alt="FitLog Logo"
+              width={22}
+              height={22}
+              className="h-5 w-5 sm:h-[22px] sm:w-[22px]"
+            />
 
-            <span className="text-sm font-bold text-white">FITLOG</span>
+            <span className="text-xs font-bold text-white sm:text-sm">
+              FITLOG
+            </span>
           </Link>
 
-          <p className="text-[10px] text-white/30">
+          <p className="text-[9px] leading-4 text-white/30 sm:text-[10px]">
             © 2026 FitLog — Workout Library. Train hard, log honest.
           </p>
         </div>

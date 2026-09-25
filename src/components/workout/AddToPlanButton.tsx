@@ -14,9 +14,11 @@ const AddToPlanButton = ({ exercise }: AddToPlanButtonProps) => {
   const { plan, addToPlan } = useFitLog();
 
   const handleAddToPlan = () => {
-    const alreadyExists = plan.some((item) => item.id === exercise.id);
+    const alreadyExists = plan.some(
+      (item) => item.id === exercise.id
+    );
 
-    if (alreadyExists) {  
+    if (alreadyExists) {
       toast.info("Already in today's plan");
       return;
     }
@@ -30,10 +32,10 @@ const AddToPlanButton = ({ exercise }: AddToPlanButtonProps) => {
     <button
       type="button"
       onClick={handleAddToPlan}
-      className="flex items-center gap-2 rounded-md bg-[#C2F800] px-4 py-3 text-xs font-bold text-black transition hover:bg-[#d4ff3b]"
+      className="flex w-full items-center justify-center gap-2 rounded-md bg-[#C2F800] px-4 py-3 text-[10px] font-bold text-black transition hover:bg-[#d4ff3b] sm:w-auto sm:text-xs"
     >
-      <FaDumbbell size={11} />
-      Add to today's plan  
+      <FaDumbbell size={10} />
+      Add to today's plan
     </button>
   );
 };
