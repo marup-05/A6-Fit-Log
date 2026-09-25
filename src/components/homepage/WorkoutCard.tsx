@@ -10,7 +10,7 @@ interface WorkoutCardProps {
 const WorkoutCard = ({ exercise }: WorkoutCardProps) => {
   return (
     <Link
-      href={`/workouts/${exercise.id}`} 
+      href={`/workouts/${exercise.id}`}
       className="group block overflow-hidden rounded-xl border border-white/5 bg-[#15171C] transition-all duration-300 hover:-translate-y-1 hover:border-[#C2F800]/30"
     >
       {/* Image */}
@@ -26,7 +26,6 @@ const WorkoutCard = ({ exercise }: WorkoutCardProps) => {
 
       {/* Card Content */}
       <div className="p-4">
-
         {/* Muscle Groups */}
         <div className="mb-3 flex flex-wrap gap-2">
           {exercise.muscleGroups.slice(0, 2).map((muscle) => (
@@ -45,16 +44,13 @@ const WorkoutCard = ({ exercise }: WorkoutCardProps) => {
         </h3>
 
         {/* Equipment */}
-        <p className="mt-1 text-xs text-white/40">
-          {exercise.equipment}
-        </p>
+        <p className="mt-1 text-xs text-white/40">{exercise.equipment}</p>
 
         {/* Divider */}
         <div className="my-4 border-t border-white/10" />
 
         {/* Exercise Info */}
         <div className="flex items-center gap-4 text-[11px] text-white/50">
-
           {/* Duration */}
           <div className="flex items-center gap-1.5">
             <FaClock size={9} />
@@ -64,7 +60,7 @@ const WorkoutCard = ({ exercise }: WorkoutCardProps) => {
           {/* Calories */}
           <div className="flex items-center gap-1.5">
             <FaFire size={9} />
-            <span>{exercise.caloriesBurned} kcal</span>  
+            <span>{exercise.caloriesBurned} kcal</span>
           </div>
 
           {/* Rating */}
@@ -72,7 +68,6 @@ const WorkoutCard = ({ exercise }: WorkoutCardProps) => {
             <FaStar size={9} />
             <span>{exercise.rating}</span>
           </div>
-
         </div>
       </div>
     </Link>
