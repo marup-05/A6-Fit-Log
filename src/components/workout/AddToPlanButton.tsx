@@ -16,7 +16,7 @@ const AddToPlanButton = ({ exercise }: AddToPlanButtonProps) => {
   const handleAddToPlan = () => {
     const alreadyExists = plan.some((item) => item.id === exercise.id);
 
-    if (alreadyExists) {
+    if (alreadyExists) {  
       toast.info("Already in today's plan");
       return;
     }
@@ -33,7 +33,7 @@ const AddToPlanButton = ({ exercise }: AddToPlanButtonProps) => {
       className="flex items-center gap-2 rounded-md bg-[#C2F800] px-4 py-3 text-xs font-bold text-black transition hover:bg-[#d4ff3b]"
     >
       <FaDumbbell size={11} />
-      Add to today's plan
+      Add to today's plan  
     </button>
   );
 };
