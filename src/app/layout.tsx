@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "@/components/shared/Navbar";
 import { FitLogProvider } from "../context/FitLogContext";
+import Footer from "@/components/shared/Footer";
 
 
 const geistSans = Geist({
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         {children}
        
+       <Footer />
         <ToastContainer 
         position="top-right"
         autoClose={2000}
