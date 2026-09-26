@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
           <Link
             href="/"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2"  
           >
             <Image
               src={logo}
