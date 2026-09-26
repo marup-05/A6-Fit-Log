@@ -4,6 +4,9 @@ import Banner from "../components/homepage/Banner";
 import WorkoutSection from "../components/homepage/WorkoutSection";
 import LoadingSkeleton from "../components/shared/LoadingSkeleton";
 
+
+export const dynamic = "force-dynamic";
+
 const HomePage = () => {
   return (
     <>
