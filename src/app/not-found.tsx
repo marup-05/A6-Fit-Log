@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { FaArrowLeft, FaDumbbell, FaSearch } from "react-icons/fa";
 
+export const dynamic = "force-dynamic";
+
 const NotFound = () => {
   return (
     <main className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#101114] px-4 text-white">
